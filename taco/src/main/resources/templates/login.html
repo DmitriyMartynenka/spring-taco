@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include = "/parts/common :: header">
+</head>
+<body>
+  <h1>Login</h1>
+  <div th:include = "/parts/common :: photo"></div>
+  <div th:if="${error}">
+    Unable to login.
+  </div>
+  <br>
+  <p>Register
+    <a th:href = "@{/registration}">CLick to registrate</a>
+  </p>
+
+  <form method="POST" th:action="@{/login}" name="loginForm">
+    <label id="username">username: </label>
+    <input type="text" name="username"><br>
+
+    <label id="password">password: </label>
+    <input type="text" name="password"><br>
+
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>
+

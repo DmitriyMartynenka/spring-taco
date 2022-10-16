@@ -1,0 +1,5 @@
+.validationError {
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  color: red;
+}

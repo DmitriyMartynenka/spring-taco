@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include = "/parts/common :: header">
+</head>
+<body>
+<div th:include = "/parts/common :: photo"></div>
+<form method="POST" th:action="@{/registration}" id="registrationForm">
+  <label id="username">Username: </label>
+  <input type="text" name="username"><br>
+
+  <label id="password">Password: </label>
+  <input type="text" name="password"><br>
+
+  <label id="firstName">Firstname: </label>
+  <input type="text" name="firstName"><br>
+
+  <label id="lastName">Lastname: </label>
+  <input type="text" name="lastName"><br>
+
+  <input type="submit" value="Register">
+</form>
+</body>
+</html>
